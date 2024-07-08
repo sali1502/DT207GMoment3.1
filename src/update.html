@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        CV | Uppdatera
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/main.scss">
+</head>
+
+<body>
+    <div class="grid-container">
+        <header>
+            <div class="menu-container">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">CV</a></li>
+                        <li><a href="add.html">Lägg till</a></li>
+                        <li><a href="update.html" class="active">Uppdatera</a></li>
+                        <li><a href="about.html">Om sidan</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+
+            <h1>Uppdatera arbete</h1>
+            <div class="text-container">
+                <form id="updateWorkForm">
+
+                    <label for="companyname">Företag</label><br>
+                    <input type="text" id="companyname" name="companyname" required><br>
+
+                    <label for="jobtitle">Titel</label><br>
+                    <input type="text" id="jobtitle" name="jobtitle" required><br>
+
+                    <label for="location">Ort</label><br>
+                    <input type="text" id="location" name="location" required><br>
+
+                    <label for="startdate">Startdatum</label><br>
+                    <input type="date" id="startdate" name="startdate" required><br><br>
+
+                    <label for="enddate">Slutdatum</label><br>
+                    <input type="date" id="enddate" name="enddate" required><br><br>
+
+                    <label for="description">Beskrivning</label><br>
+                    <textarea id="description" name="description" class="textarea" required></textarea><br>
+
+                    <input type="submit" value="Uppdatera" class="button">
+                </form>
+            </div>
+        </main>
+
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>
