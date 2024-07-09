@@ -123,14 +123,14 @@ async function getWork() {
             let deleteButton = document.createElement("button");
             deleteButton.className = "deleteBtn";
             deleteButton.textContent = "Radera";
-            deleteButton.onclick = () => deleteWork(item.id);
+            deleteButton.onclick = () => deleteWork(item._id);
             buttonContainer.appendChild(deleteButton);
 
             let updateButton = document.createElement("button");
             updateButton.className = "updateBtn";
             updateButton.textContent = "Uppdatera";
             updateButton.onclick = () => {
-                window.location.href = `http://localhost:1234/update.html?id=${item.id}`;
+                window.location.href = `http://localhost:1234/update.html?id=${item._id}`;
             };
 
             buttonContainer.appendChild(updateButton);
@@ -221,7 +221,6 @@ async function updateWork(id, companyname, jobtitle, location, startdate, enddat
     }
     // Omdirigera till startsidan
     window.location.href = "http://localhost:1234/index.html";
-
 }
 
 /* RADERA DATA - CRUD DELETE/DELETE */
